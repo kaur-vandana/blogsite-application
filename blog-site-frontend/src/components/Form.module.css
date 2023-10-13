@@ -1,0 +1,76 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.blogcontainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.buttoncontainer {
+  padding: 10px;
+  /* padding: auto; */
+
+  /* border: 2px solid #fff;  */
+}
+
+.formgroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+}
+
+.h1 {
+  color: darkgreen;
+}
+
+.p {
+  color: darkslategray;
+}
+
+
+
+.list {
+  /* margin: 10; */
+  margin-left: 10;
+  padding: 10;
+  list-style: none;
+  /* border: 1px solid black; */
+  border: 2px solid red;
+  border-radius: 5px;
+  align-items: center;
+  
+}
+
+.listitem {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.listitemcontent {
+  flex: 1;
+  padding: 10px;
+}
+
+.listitemicon {
+  flex: 0 0 20px;
+}
