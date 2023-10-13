@@ -1,0 +1,33 @@
+
+server:
+    port: 8765
+
+
+spring:
+    application:
+        name: API-GATEWAY
+    cloud:
+        gateway:
+            discovery:
+                locator:
+                    enabled: true
+            routes:
+                -   id: USER-SERVICE-API
+                    uri: lb://USER-SERVICE-API
+                    predicates:
+                    - Path=/api/v1.0/blogsite/user/**
+                -   id: BLOG-SERVICE-API
+                    uri: lb://BLOG-SERVICE-API
+                    predicates:
+                    - Path=/api/v1.0/blogsite/blogs/**
+                
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone : http://localhost:8761/eureka/eureka/
